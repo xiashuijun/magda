@@ -48,7 +48,7 @@ abstract class BaseRecordsServiceAuthSpec extends ApiSpec {
         param,
         recordPolicy,
         expectedReadPolicy,
-        """{ "queries": [] }"""
+        """{ "queries": [[]] }"""
       )
 
       Get(s"/v0/records/foo") ~> addTenantIdHeader(
@@ -281,7 +281,7 @@ abstract class BaseRecordsServiceAuthSpec extends ApiSpec {
         param,
         recordPolicy,
         expectedReadPolicy,
-        """{ "queries": [] }"""
+        """{ "queries": [[]] }"""
       )
 
       Get(s"/v0/records/summary/foo") ~> addTenantIdHeader(

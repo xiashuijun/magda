@@ -112,7 +112,7 @@ class RecordsServiceAuthSpec extends BaseRecordsServiceAuthSpec {
             "not.default.policyid.read",
             """{
             "result": {
-                "queries": []
+                "queries": [[]]
             }
           }"""
           )

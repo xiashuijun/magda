@@ -46,7 +46,7 @@ class WithDefaultPolicyRecordsServiceAuthSpec
             addRecord(param, Record(recordId, "foo", Map()))
             expectOpaQueryForPolicy(param, "default.policy.read", """{
             "result": {
-                "queries": []
+                "queries": [[]]
             }
           }""")
 
@@ -204,7 +204,7 @@ class WithDefaultPolicyRecordsServiceAuthSpec
             addRecord(param, Record(recordId, "foo", Map()))
             expectOpaQueryForPolicy(param, "default.policy.read", """{
               "result": {
-                  "queries": []
+                  "queries": [[]]
               }
             }""")
 
